@@ -11,7 +11,7 @@ import {
   IonText,
   IonTitle,
   IonToolbar,
-  useIonRouter
+  useIonRouter,
 } from '@ionic/react';
 
 const Login: React.FC = () => {
@@ -21,22 +21,17 @@ const Login: React.FC = () => {
     navigation.push('/it35-lab/app', 'forward', 'replace');
   }
   return (
-    <IonPage>
-    <><IonList>
-      <IonItem>
-        <IonInput labelPlacement="floating" 
-        value="hi@ionic.io">
-          <div slot="label">
-            Email <IonText color="danger">(Required)</IonText>
-          </div>
-        </IonInput>
-      </IonItem>
-    </IonList><IonContent className='ion-padding'>
+    <><>
+      <IonInput label="Email" labelPlacement="floating" fill="outline" placeholder="Enter text"></IonInput>
+
+      <br />
+
+      <IonInput label="Password" labelPlacement="floating" fill="outline" placeholder="Enter text"></IonInput>
+    </><IonContent className='ion-padding'>
         <IonButton onClick={() => doLogin()} expand="full">
           Login
         </IonButton>
       </IonContent></>
-    </IonPage>
   );
 };
 
