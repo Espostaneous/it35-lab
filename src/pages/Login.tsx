@@ -22,7 +22,7 @@ const Login: React.FC = () => {
   }
   return (
     <><>
-      <IonInput label="Email" labelPlacement="floating" fill="outline" placeholder="Enter text" style={{ marginTop: '250px' }}></IonInput>
+      <IonInput label="Email" labelPlacement="floating" fill="outline" placeholder="Enter text" style={{ marginTop: '300px' }}></IonInput>
 
       <br />
 
