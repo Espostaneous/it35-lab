@@ -13,6 +13,7 @@ function SearchContainer() {
     'Madrid',
     'New York',
     'Panama City',
+    'Philippines',
   ];
   let [results, setResults] = useState([...data]);
 
