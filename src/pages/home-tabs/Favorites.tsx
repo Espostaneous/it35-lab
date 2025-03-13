@@ -1,4 +1,6 @@
 import { 
+  IonAlert,
+  IonButton,
     IonButtons,
       IonContent, 
       IonHeader, 
@@ -20,15 +22,23 @@ import {
           </IonToolbar>
         </IonHeader>
         <IonContent fullscreen>
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            height: '100%',
-          }}
-        >
-          Favorites
+        <div style={{
+                  display: 'flex',
+                  flexDirection:'column',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  marginTop:'25%'
+                 }}>
+                  <>
+                   <IonButton id="present-alert">Click Me</IonButton>
+                   <IonAlert
+                   trigger="present-alert"
+                   header="A Short Title Is Best"
+                   subHeader="A Sub Header Is Optional"
+                    message="A message should be a short, complete sentence."
+                   buttons={['Action']}
+                   ></IonAlert>
+                   </>
         </div>
         </IonContent>
       </IonPage>
