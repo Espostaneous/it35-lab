@@ -25,6 +25,9 @@ const Login: React.FC = () => {
   const doLogin = () => {
     navigation.push('/it35-lab/app', 'forward', 'replace');
   }
+  const doRegister = () => {
+    navigation.push('/it35-lab/pages/Register', 'forward', 'replace');
+  }
   return (
    <IonPage>
     <IonContent className='ion-padding'>
@@ -61,7 +64,7 @@ const Login: React.FC = () => {
           <IonButton onClick={() => doLogin()} expand="full">
             Login
           </IonButton>
-          <IonButton onClick={() => doLogin()} expand="full">
+          <IonButton onClick={() => doRegister()} expand="full">
             Register
           </IonButton>
        </IonContent>
