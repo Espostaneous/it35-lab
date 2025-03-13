@@ -114,7 +114,7 @@ const Register: React.FC = () => {
               Register
           </IonButton>
           <IonButton routerLink="/it35-lab" expand="full" fill="clear" shape='round'>
-            Already have an account? Signin
+            Already have an account? Sign in
           </IonButton>
 
           {/* Verification Modal */}
