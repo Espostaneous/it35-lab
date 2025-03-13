@@ -62,7 +62,7 @@ const Register: React.FC = () => {
               labelPlacement="stacked"
               fill="outline"
               type="text"
-              placeholder="Enter a unique username"
+              placeholder="Username"
               value={username}
               onIonChange={e => setUsername(e.detail.value!)}
           />
@@ -74,7 +74,7 @@ const Register: React.FC = () => {
               labelPlacement="stacked" 
               fill="outline"
               type="email"
-              placeholder="youremail@nbsc.edu.ph"
+              placeholder="Email"
               value={email}
               onIonChange={e => setEmail(e.detail.value!)}
           />
