@@ -64,7 +64,7 @@ const Login: React.FC = () => {
           <IonButton onClick={() => doLogin()} expand="full">
             Login
           </IonButton>
-          <IonButton onClick={() => doRegister()} expand="full">
+          <IonButton  routerLink="/it35-lab/register" expand="full" fill="clear" shape='round'>
             Register
           </IonButton>
        </IonContent>
