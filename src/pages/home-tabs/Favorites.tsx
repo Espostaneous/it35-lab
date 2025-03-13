@@ -33,10 +33,10 @@ import {
                    <IonButton id="present-alert">Click Me</IonButton>
                    <IonAlert
                    trigger="present-alert"
-                   header="A Short Title Is Best"
-                   subHeader="A Sub Header Is Optional"
-                    message="A message should be a short, complete sentence."
-                   buttons={['Action']}
+                   header="Dis Tab Incomplete"
+                   subHeader="If u reading dis, then u a dumbass"
+                    message="Have a nice day, come back in a later time"
+                   buttons={['Ok, Thank You']}
                    ></IonAlert>
                    </>
         </div>
