@@ -34,7 +34,7 @@ import {
                    <IonAlert
                    trigger="present-alert"
                    header="Dis Tab Incomplete"
-                   subHeader="If u reading dis, then u a dumbass"
+                   subHeader="If u reading dis, then u just wasted your time"
                     message="Have a nice day, come back in a later time"
                    buttons={['Ok, Thank You']}
                    ></IonAlert>
