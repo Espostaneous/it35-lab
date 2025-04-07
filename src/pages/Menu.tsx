@@ -1,4 +1,5 @@
 import { 
+  IonAlert
   IonButton,
     IonButtons,
       IonContent, 
@@ -24,6 +25,7 @@ import {
     const path = [
       {name:'Home', url: '/it35-lab/app/home', icon: homeOutline},
       {name:'About', url: '/it35-lab/app/about', icon: rocketOutline},
+      {name:'Profile', url: '/it35-lab/app/profile', icon: settingsOutline},
   ]
   
     return (
@@ -60,6 +62,8 @@ import {
               <Route exact path="/it35-lab/app/home" component={Home} />
               <Route exact path="/it35-lab/app/home/details" component={Details} />
               <Route exact path="/it35-lab/app/about" component={About} />
+              <Route exact path="/it35-lab/app/profile" component={Profile} />
+
               <Route exact path="/it35-lab/app">
                   <Redirect to="/it35-lab/app/home"/>
               </Route>
