@@ -10,7 +10,7 @@ import {
   IonToast,  
   useIonRouter
 } from '@ionic/react';
-import { logoIonic } from 'ionicons/icons';
+import { skullOutline } from 'ionicons/icons';
 import { useState } from 'react';
 import { supabase } from '../utils/supabaseClient';
 
@@ -71,7 +71,7 @@ const Login: React.FC = () => {
             }}
           >
             <IonIcon 
-              icon={logoIonic}
+              icon={skullOutline}
               color='primary'
               style={{ fontSize: '120px', color: '#6c757d' }} 
             />
