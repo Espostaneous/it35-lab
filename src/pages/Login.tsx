@@ -13,6 +13,7 @@ import {
 import { skullOutline } from 'ionicons/icons';
 import { useState } from 'react';
 import { supabase } from '../utils/supabaseClient';
+import background from '../images/susback.jpg';
 
 const AlertBox: React.FC<{ message: string; isOpen: boolean; onClose: () => void }> = ({ message, isOpen, onClose }) => {
   return (
@@ -70,6 +71,19 @@ const Login: React.FC = () => {
               overflow: 'hidden' 
             }}
           >
+                        <img
+              src={background}
+              alt="background"
+              style={{
+                position: 'fixed',
+                top: 0,
+                left: 0,
+                width: '100%', 
+                height: '100%', 
+                objectFit: 'cover', 
+                zIndex: -1, 
+              }}
+            />
             <IonIcon 
               icon={skullOutline}
               color='primary'
