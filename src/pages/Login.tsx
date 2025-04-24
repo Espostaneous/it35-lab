@@ -13,7 +13,7 @@ import {
 import { skullOutline } from 'ionicons/icons';
 import { useState } from 'react';
 import { supabase } from '../utils/supabaseClient';
-import background from '../images/susback.jpg';
+import background from '../images/Arcane.png';
 
 const AlertBox: React.FC<{ message: string; isOpen: boolean; onClose: () => void }> = ({ message, isOpen, onClose }) => {
   return (
@@ -60,36 +60,19 @@ const Login: React.FC = () => {
           justifyContent: 'center',
           marginTop:'25%'
         }}>
-          <IonAvatar
+            <div
             style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              width: '150px',
-              height: '150px',
-              borderRadius: '50%', 
-              overflow: 'hidden' 
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              zIndex: -1,
+              backgroundImage: `url(${background})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
             }}
-          >
-                        <img
-              src={background}
-              alt="background"
-              style={{
-                position: 'fixed',
-                top: 0,
-                left: 0,
-                width: '100%', 
-                height: '100%', 
-                objectFit: 'cover', 
-                zIndex: -1, 
-              }}
-            />
-            <IonIcon 
-              icon={skullOutline}
-              color='primary'
-              style={{ fontSize: '120px', color: '#6c757d' }} 
-            />
-          </IonAvatar>
+            ></div>
           <h1 style={{
             display: 'flex',
             alignItems: 'center',
@@ -118,7 +101,13 @@ const Login: React.FC = () => {
           Login
         </IonButton>
 
-        <IonButton routerLink="/it35-lab/register" expand="full" fill="clear" shape='round'>
+        <IonButton 
+          routerLink="/it35-lab/register" 
+          expand="full" 
+          fill="clear" 
+          shape='round' 
+          style={{ color: 'white' }}
+        >
           Don't have an account? Register here
         </IonButton>
 
