@@ -1,0 +1,184 @@
+/* Arcane Theme Styles */
+.arcane-theme {
+    --ion-background-color: #1a1a2e;
+    --ion-text-color: #e6e6e6;
+    --ion-color-primary: #9a4dff;
+    --ion-color-secondary: #ff4d8d;
+    --ion-color-tertiary: #4dffff;
+    --ion-color-dark: #0f0f1a;
+    --ion-color-light: #f0f0f5;
+  }
+  
+  .arcane-card {
+    background: linear-gradient(145deg, #252540, #1e1e35);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(154, 77, 255, 0.2);
+    margin: 16px auto;
+    max-width: 800px;
+    border: 1px solid rgba(154, 77, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .arcane-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(154, 77, 255, 0.3);
+  }
+  
+  .arcane-title {
+    color: var(--ion-color-primary);
+    font-weight: 600;
+    text-shadow: 0 0 8px rgba(154, 77, 255, 0.4);
+  }
+  
+  .arcane-button {
+    --background: linear-gradient(90deg, var(--ion-color-primary), #7a36ff);
+    --background-hover: linear-gradient(90deg, #7a36ff, #5a1aff);
+    --background-activated: #5a1aff;
+    --color: white;
+    font-weight: 500;
+    border-radius: 50px;
+    margin: 8px;
+    box-shadow: 0 2px 10px rgba(154, 77, 255, 0.3);
+  }
+  
+  .arcane-button:hover {
+    transform: translateY(-1px);
+  }
+  
+  .arcane-input {
+    background: rgba(30, 30, 53, 0.7);
+    border-radius: 8px;
+    border: 1px solid rgba(154, 77, 255, 0.2);
+    color: var(--ion-text-color);
+    padding: 12px;
+    margin: 8px 0;
+  }
+  
+  .arcane-avatar {
+    border: 2px solid var(--ion-color-primary);
+    box-shadow: 0 0 10px rgba(154, 77, 255, 0.5);
+    transition: transform 0.3s ease;
+  }
+  
+  .arcane-avatar:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Post specific styles */
+  .post-creator-container {
+    padding: 16px;
+  }
+  
+  .post-creator {
+    background: linear-gradient(145deg, #2a2a4a, #1f1f38);
+  }
+  
+  .post-button-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 16px 16px;
+  }
+  
+  .posts-container {
+    padding: 0 16px;
+  }
+  
+  .post-header {
+    padding-bottom: 0;
+  }
+  
+  .post-username {
+    color: var(--ion-color-tertiary);
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+  }
+  
+  .post-date {
+    color: #a0a0c0;
+    font-size: 0.8rem;
+  }
+  
+  .post-content {
+    padding-top: 0;
+  }
+  
+  .post-text {
+    color: var(--ion-text-color);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  .post-actions-button {
+    --color: var(--ion-color-secondary);
+    --color-hover: #ff2d7d;
+  }
+  
+  .action-icon {
+    font-size: 1.2rem;
+  }
+  
+  /* Modal styles */
+  .arcane-modal {
+    --background: rgba(26, 26, 46, 0.9);
+    --ion-background-color: transparent;
+  }
+  
+  .modal-header {
+    background: linear-gradient(90deg, #1a1a2e, #252540);
+    border-bottom: 1px solid rgba(154, 77, 255, 0.2);
+  }
+  
+  .modal-title {
+    color: var(--ion-color-primary);
+    text-align: center;
+  }
+  
+  .modal-content {
+    --background: transparent;
+    padding: 16px;
+  }
+  
+  .modal-footer {
+    background: linear-gradient(90deg, #1a1a2e, #252540);
+    border-top: 1px solid rgba(154, 77, 255, 0.2);
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Popover styles */
+  .arcane-popover {
+    --background: #252540;
+    --color: var(--ion-text-color);
+  }
+  
+  .popover-item {
+    --background-hover: rgba(154, 77, 255, 0.1);
+    --color: var(--ion-text-color);
+  }
+  
+  /* Loading state */
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .loading-text {
+    color: var(--ion-color-primary);
+    font-size: 1.2rem;
+    text-align: center;
+    animation: pulse 2s infinite;
+  }
+  
+  .sparkle-icon {
+    color: var(--ion-color-tertiary);
+    margin-right: 8px;
+  }
+  
+  @keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+  }
